@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Main from './Main';
+import './index.css';
+import Listbox from './Listbox';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Mainland from './Mainland';
+import Cardall  from './Card'
+import Page from './Page';
+import {BrowserRouter,Route,Switch} from  "react-router-dom";
+import Service from './Service';
+import Webdevelopment from './Webdevelopment';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <div>
+    
+     {/* <BrowserRouter>
+<Switch>
+  
+<Route exact path="/"  component={Main}/>
+<Route exact path="/Mainland"  component={Mainland}/>
+<Route exact path="/Cardall"  component={Cardall}/>
+<Route exact path="/Cardall"  component={Listbox}/>
+
+</Switch>
+</BrowserRouter> */}
+
+<Service/>
+
+{/* <Webdevelopment/> */}
+
+
+    </div>   
+   </>
   );
 }
 
